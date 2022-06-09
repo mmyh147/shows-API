@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+    
+}
+#continer{
+background-color: rgb(15, 15, 15);
+margin: 5em;
+height: 100%;
+padding-top: 3em;
+border-radius: 0.5em;
+text-align: center;
+}
+
+#continer div{
+    
+    display: inline;
+    position: relative;
+    margin: 0.1em;
+    
+}
+
+#continer div:hover div{
+    display: inline;
+    z-index: 2;
+    
+}
+#continer div .showTitle{
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    width: 100%;
+    text-overflow: unset;
+    white-space: unset;
+  font-size: 1.2em;
+  word-wrap: break-word;
+  
+  color: rgb(255, 255, 255);
+
+  display: none;
+  overflow: hidden;
+}
+#continer div .rating{
+    text-align: right;
+    position: absolute;
+    top: -280px;
+    right: 0;
+    border-radius: 0.2em;
+    padding-left: 2px;
+    
+    text-overflow: unset;
+    white-space: unset;
+  font-size: 1.2em;
+  word-wrap: break-word;
+  background-color: rgba(0,0,0,.5);
+  color: rgb(255, 238, 0);
+    display: none;
+  overflow: hidden;
+}
+
+#continer div img{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    border-radius: 0.5em;
+    transition: .2s;
+
+}
+#continer div img:hover{
+    transform: scale(1.1);
+    filter: brightness(0.4);
+    z-index: 1;
+
+}
+
+
+
+h1{
+    text-align: center;
+}
