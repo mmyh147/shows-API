@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    
+    color: white;
 }
 #continer{
 background-color: rgb(15, 15, 15);
@@ -11,20 +11,23 @@ border-radius: 0.5em;
 text-align: center;
 }
 
-#continer div{
+
+
+#continer .card{
     
     display: inline;
     position: relative;
     margin: 0.1em;
+    cursor: pointer;
     
 }
 
-#continer div:hover div{
+#continer .card:hover div{
     display: inline;
     z-index: 2;
     
 }
-#continer div .showTitle{
+#continer .card .showTitle{
     text-align: left;
     position: absolute;
     bottom: 0;
@@ -41,7 +44,7 @@ text-align: center;
   display: none;
   overflow: hidden;
 }
-#continer div .rating{
+#continer .card .rating{
     text-align: right;
     position: absolute;
     top: -280px;
@@ -59,7 +62,7 @@ text-align: center;
   overflow: hidden;
 }
 
-#continer div img{
+#continer .card img{
     position: relative;
     bottom: 0;
     right: 0;
@@ -67,15 +70,71 @@ text-align: center;
     transition: .2s;
 
 }
-#continer div img:hover{
+#continer .card img:hover{
     transform: scale(1.1);
     filter: brightness(0.4);
     z-index: 1;
 
 }
-
+a .fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
 
 
 h1{
     text-align: center;
+}
+
+
+
+/* showPage */
+
+.showPage{
+    background-color: rgb(15, 15, 15);
+    margin: 0 10em;
+    height: 100%;
+    padding-top: 2em;
+    padding-left: 2em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.showDit{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.leftSide{
+margin: 2em;
+width: 20%;
+text-align: left;
+}
+.leftSide h1{
+    text-align: center;
+    width: 268px;
+}
+.leftSide div img{
+    width:268px;
+    height: auto;
+    border-radius: 0.3em;
+}
+hr{
+    color: gray;
+    border-color: gray;
+    width: 268px;
+    border-radius: 0.5em;
+}
+
+.rightSide{
+    margin: 10em;
+    text-align: left;
+}
+
+.rating{
+
 }
